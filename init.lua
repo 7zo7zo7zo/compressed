@@ -161,6 +161,15 @@ minetest.register_node("compressed:compressed_cobble_8", {
 })
 
 minetest.register_craft({
+    output = "compressed:compressed_cobble_8",
+    recipe = {
+      {"compressed:compressed_cobble_7", "compressed:compressed_cobble_7", "compressed:compressed_cobble_7"},
+      {"compressed:compressed_cobble_7", "compressed:compressed_cobble_7", "compressed:compressed_cobble_7"},
+      {"compressed:compressed_cobble_7", "compressed:compressed_cobble_7", "compressed:compressed_cobble_7"},
+    }
+})
+
+minetest.register_craft({
     output = "compressed:compressed_cobble_7 9",
     recipe = {{"compressed:compressed_cobble_8"}}
 })
